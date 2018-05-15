@@ -12,7 +12,7 @@ Return the randomuser record + newly generated db ID
 
 */
 router.get('/', function(req, res, next) {
-  request('https://randomuser.me/api?nat=us,dk,fr,gb', { json: true }, (err, result, body) => {
+  request('https://randomuser.me/api?nat=us', { json: true }, (err, result, body) => {
 
     if (err) { return console.log(err); }
     // console.log(result);
