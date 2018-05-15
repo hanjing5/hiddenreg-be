@@ -33,7 +33,7 @@ router.get('/', function(req, res, next) {
 
     r['dob_year'] = year;
     r['dob_month'] = month;
-    r['dob_date'] = date;
+    r['dob_day'] = date;
 
     console.log(password);
     console.log(dob);
